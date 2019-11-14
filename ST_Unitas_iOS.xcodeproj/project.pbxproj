@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9BCEB8B4237D73E8001B6CAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCEB8B3237D73E8001B6CAB /* AppDelegate.swift */; };
+		9BCEB8B6237D73E8001B6CAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCEB8B5237D73E8001B6CAB /* SceneDelegate.swift */; };
+		9BCEB8B8237D73E8001B6CAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCEB8B7237D73E8001B6CAB /* ViewController.swift */; };
+		9BCEB8BB237D73E8001B6CAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BCEB8B9237D73E8001B6CAB /* Main.storyboard */; };
+		9BCEB8BD237D73EA001B6CAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BCEB8BC237D73EA001B6CAB /* Assets.xcassets */; };
+		9BCEB8C0237D73EA001B6CAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BCEB8BE237D73EA001B6CAB /* LaunchScreen.storyboard */; };
+		E17028B2033604058A126D22 /* Pods_ST_Unitas_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1981B9A63EC6C1034A8FBBA /* Pods_ST_Unitas_iOS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		34B369CD8B97AAF96C5D49D0 /* Pods-ST_Unitas_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ST_Unitas_iOS.release.xcconfig"; path = "Target Support Files/Pods-ST_Unitas_iOS/Pods-ST_Unitas_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		9BCEB8B0237D73E8001B6CAB /* ST_Unitas_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ST_Unitas_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BCEB8B3237D73E8001B6CAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9BCEB8B5237D73E8001B6CAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9BCEB8B7237D73E8001B6CAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9BCEB8BA237D73E8001B6CAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9BCEB8BC237D73EA001B6CAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9BCEB8BF237D73EA001B6CAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9BCEB8C1237D73EA001B6CAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1981B9A63EC6C1034A8FBBA /* Pods_ST_Unitas_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ST_Unitas_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E30F32109B75DC500BA2DEC8 /* Pods-ST_Unitas_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ST_Unitas_iOS.debug.xcconfig"; path = "Target Support Files/Pods-ST_Unitas_iOS/Pods-ST_Unitas_iOS.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9BCEB8AD237D73E8001B6CAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E17028B2033604058A126D22 /* Pods_ST_Unitas_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9A61FF240FB7528E648A6333 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E30F32109B75DC500BA2DEC8 /* Pods-ST_Unitas_iOS.debug.xcconfig */,
+				34B369CD8B97AAF96C5D49D0 /* Pods-ST_Unitas_iOS.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9BCEB8A7237D73E8001B6CAB = {
+			isa = PBXGroup;
+			children = (
+				9BCEB8B2237D73E8001B6CAB /* ST_Unitas_iOS */,
+				9BCEB8B1237D73E8001B6CAB /* Products */,
+				9A61FF240FB7528E648A6333 /* Pods */,
+				FAD97DA0394DA18158D40114 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9BCEB8B1237D73E8001B6CAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9BCEB8B0237D73E8001B6CAB /* ST_Unitas_iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9BCEB8B2237D73E8001B6CAB /* ST_Unitas_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				9BCEB8B3237D73E8001B6CAB /* AppDelegate.swift */,
+				9BCEB8B5237D73E8001B6CAB /* SceneDelegate.swift */,
+				9BCEB8B7237D73E8001B6CAB /* ViewController.swift */,
+				9BCEB8B9237D73E8001B6CAB /* Main.storyboard */,
+				9BCEB8BC237D73EA001B6CAB /* Assets.xcassets */,
+				9BCEB8BE237D73EA001B6CAB /* LaunchScreen.storyboard */,
+				9BCEB8C1237D73EA001B6CAB /* Info.plist */,
+			);
+			path = ST_Unitas_iOS;
+			sourceTree = "<group>";
+		};
+		FAD97DA0394DA18158D40114 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1981B9A63EC6C1034A8FBBA /* Pods_ST_Unitas_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9BCEB8AF237D73E8001B6CAB /* ST_Unitas_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BCEB8C4237D73EA001B6CAB /* Build configuration list for PBXNativeTarget "ST_Unitas_iOS" */;
+			buildPhases = (
+				ADD535AC97EADFF0637E4AE4 /* [CP] Check Pods Manifest.lock */,
+				9BCEB8AC237D73E8001B6CAB /* Sources */,
+				9BCEB8AD237D73E8001B6CAB /* Frameworks */,
+				9BCEB8AE237D73E8001B6CAB /* Resources */,
+				11ACF081A0691446086C90A1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ST_Unitas_iOS;
+			productName = ST_Unitas_iOS;
+			productReference = 9BCEB8B0237D73E8001B6CAB /* ST_Unitas_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9BCEB8A8237D73E8001B6CAB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = lee;
+				TargetAttributes = {
+					9BCEB8AF237D73E8001B6CAB = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 9BCEB8AB237D73E8001B6CAB /* Build configuration list for PBXProject "ST_Unitas_iOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9BCEB8A7237D73E8001B6CAB;
+			productRefGroup = 9BCEB8B1237D73E8001B6CAB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9BCEB8AF237D73E8001B6CAB /* ST_Unitas_iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9BCEB8AE237D73E8001B6CAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BCEB8C0237D73EA001B6CAB /* LaunchScreen.storyboard in Resources */,
+				9BCEB8BD237D73EA001B6CAB /* Assets.xcassets in Resources */,
+				9BCEB8BB237D73E8001B6CAB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11ACF081A0691446086C90A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ST_Unitas_iOS/Pods-ST_Unitas_iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ST_Unitas_iOS/Pods-ST_Unitas_iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ST_Unitas_iOS/Pods-ST_Unitas_iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADD535AC97EADFF0637E4AE4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ST_Unitas_iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9BCEB8AC237D73E8001B6CAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BCEB8B8237D73E8001B6CAB /* ViewController.swift in Sources */,
+				9BCEB8B4237D73E8001B6CAB /* AppDelegate.swift in Sources */,
+				9BCEB8B6237D73E8001B6CAB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9BCEB8B9237D73E8001B6CAB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BCEB8BA237D73E8001B6CAB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9BCEB8BE237D73EA001B6CAB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BCEB8BF237D73EA001B6CAB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9BCEB8C2237D73EA001B6CAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9BCEB8C3237D73EA001B6CAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9BCEB8C5237D73EA001B6CAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E30F32109B75DC500BA2DEC8 /* Pods-ST_Unitas_iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X6XSS6YDP5;
+				INFOPLIST_FILE = ST_Unitas_iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lee.kr.ST-Unitas-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9BCEB8C6237D73EA001B6CAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34B369CD8B97AAF96C5D49D0 /* Pods-ST_Unitas_iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X6XSS6YDP5;
+				INFOPLIST_FILE = ST_Unitas_iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lee.kr.ST-Unitas-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9BCEB8AB237D73E8001B6CAB /* Build configuration list for PBXProject "ST_Unitas_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BCEB8C2237D73EA001B6CAB /* Debug */,
+				9BCEB8C3237D73EA001B6CAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BCEB8C4237D73EA001B6CAB /* Build configuration list for PBXNativeTarget "ST_Unitas_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BCEB8C5237D73EA001B6CAB /* Debug */,
+				9BCEB8C6237D73EA001B6CAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9BCEB8A8237D73E8001B6CAB /* Project object */;
+}
