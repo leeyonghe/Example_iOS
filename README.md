@@ -59,13 +59,13 @@ UITableView/UICollectionView prefetching 사용 <br> <br>
   </tr>
   <tr>  
       <td>
-        <span>초기화면</span>
+        <span>항목 클릭시 웹 페이지로 이동</span>
       </td>
     <td>
-       <span>메인 검색 화면</span>
+       <span>항목에서 왼쪽 이미지 아이콘 클릭시 이미지 전체보기로 이동</span>
       </td>
     <td>
-        <span>검색 결과</span>
+        <span>항목 왼쪽 이미지 Kingfisher 라이브러리 사용 및 스크롤시 페이징 기능 적용 </span>
       </td>
   </tr>
 </table>
