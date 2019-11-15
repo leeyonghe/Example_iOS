@@ -28,11 +28,11 @@ UITableView/UICollectionView prefetching 사용 <br> <br>
 </div>
 <div style="float:left;">
   <img src="./ScreenShot/IMG_0125.PNG" width="30%">
-  <span><--- 초기화면</span>
+  <span><--- 메인 검색 화면</span>
 </div>
 <div style="float:left;">
   <img src="./ScreenShot/IMG_0126.PNG" width="30%">
-  <span><--- 초기화면</span>
+  <span><--- 검색 결과</span>
 </div>
 <div style="float:left;">
   <img src="./ScreenShot/IMG_0127.PNG" width="30%">
