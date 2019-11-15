@@ -25,14 +25,22 @@ UITableView/UICollectionView prefetching 사용 <br> <br>
   <tr>  
       <td>
         <img src="./ScreenShot/IMG_0124.PNG" width="100%">
-          <span><--- 초기화면</span>
       </td>
     <td>
         <img src="./ScreenShot/IMG_0125.PNG" width="100%">
-       <span><--- 메인 검색 화면</span>
       </td>
     <td>
         <img src="./ScreenShot/IMG_0126.PNG" width="100%">
+      </td>
+  </tr>
+  <tr>  
+      <td>
+        <span><--- 초기화면</span>
+      </td>
+    <td>
+       <span><--- 메인 검색 화면</span>
+      </td>
+    <td>
         <span><--- 검색 결과</span>
       </td>
   </tr>
@@ -41,16 +49,23 @@ UITableView/UICollectionView prefetching 사용 <br> <br>
   <tr>  
       <td>
         <img src="./ScreenShot/IMG_0127.PNG" width="100%">
-          <span><--- 초기화면</span>
       </td>
     <td>
         <img src="./ScreenShot/IMG_0128.PNG" width="100%">
-        <span><--- 메인 검색 화면</span>
       </td>
     <td>
         <img src="./ScreenShot/IMG_0129.PNG" width="100%">
+      </td>
+  </tr>
+  <tr>  
+      <td>
+        <span><--- 초기화면</span>
+      </td>
+    <td>
+       <span><--- 메인 검색 화면</span>
+      </td>
+    <td>
         <span><--- 검색 결과</span>
       </td>
   </tr>
 </table>
-
