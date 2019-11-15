@@ -21,36 +21,36 @@ RxSwift 사용. <br>
 Unit Test 적용. <br>
 UITableView/UICollectionView prefetching 사용 <br> <br>
 - 스크린샷 <br>
-<div style="float:left;">
-<hr/>
-<div style="float:left;">
-  <img src="./ScreenShot/IMG_0124.PNG" width="30%">
-  <span><--- 초기화면</span>
-</div>
-<hr/>
-<div style="float:left;">
-  <img src="./ScreenShot/IMG_0125.PNG" width="30%">
-  <span><--- 메인 검색 화면</span>
-</div>
-<hr/>
-<div style="float:left;">
-  <img src="./ScreenShot/IMG_0126.PNG" width="30%">
-  <span><--- 검색 결과</span>
-</div>
-<hr/>
-<div style="float:left;">
-  <img src="./ScreenShot/IMG_0127.PNG" width="30%">
-  <span><--- 초기화면</span>
-</div>
-<hr/>
-<div style="float:left;">
-  <img src="./ScreenShot/IMG_0128.PNG" width="30%">
-  <span><--- 초기화면</span>
-</div>
-<hr/>
-<div style="float:left;">
-  <img src="./ScreenShot/IMG_0129.PNG" width="30%">
-  <span><--- 초기화면</span>
-</div>
-<hr/>
-</div>
+<table>
+  <tr>  
+      <td>
+        <img src="./ScreenShot/IMG_0124.PNG" width="100%">
+          <span><--- 초기화면</span>
+      </td>
+    <td>
+        <img src="./ScreenShot/IMG_0125.PNG" width="100%">
+       <span><--- 메인 검색 화면</span>
+      </td>
+    <td>
+        <img src="./ScreenShot/IMG_0126.PNG" width="100%">
+        <span><--- 검색 결과</span>
+      </td>
+  </tr>
+</table>
+<table>
+  <tr>  
+      <td>
+        <img src="./ScreenShot/IMG_0127.PNG" width="100%">
+          <span><--- 초기화면</span>
+      </td>
+    <td>
+        <img src="./ScreenShot/IMG_0128.PNG" width="100%">
+        <span><--- 메인 검색 화면</span>
+      </td>
+    <td>
+        <img src="./ScreenShot/IMG_0129.PNG" width="100%">
+        <span><--- 검색 결과</span>
+      </td>
+  </tr>
+</table>
+
