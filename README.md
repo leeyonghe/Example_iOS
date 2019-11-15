@@ -24,11 +24,26 @@ UITableView/UICollectionView prefetching 사용 <br> <br>
 <div style="float:left;">
 <div style="float:left;">
   <img src="./ScreenShot/IMG_0124.PNG" width="30%">
-  <span>*초기화면</span>
+  <span><--- 초기화면</span>
 </div>
-<div style="float:left;"><img src="./ScreenShot/IMG_0125.PNG" width="30%"></div>
-<div style="float:left;"><img src="./ScreenShot/IMG_0126.PNG" width="30%"></div>
-<div style="float:left;"><img src="./ScreenShot/IMG_0127.PNG" width="30%"></div>
-<div style="float:left;"><img src="./ScreenShot/IMG_0128.PNG" width="30%"></div>
-<div style="float:left;"><img src="./ScreenShot/IMG_0129.PNG" width="30%"></div>
+<div style="float:left;">
+  <img src="./ScreenShot/IMG_0125.PNG" width="30%">
+  <span><--- 초기화면</span>
+</div>
+<div style="float:left;">
+  <img src="./ScreenShot/IMG_0126.PNG" width="30%">
+  <span><--- 초기화면</span>
+</div>
+<div style="float:left;">
+  <img src="./ScreenShot/IMG_0127.PNG" width="30%">
+  <span><--- 초기화면</span>
+</div>
+<div style="float:left;">
+  <img src="./ScreenShot/IMG_0128.PNG" width="30%">
+  <span><--- 초기화면</span>
+</div>
+<div style="float:left;">
+  <img src="./ScreenShot/IMG_0129.PNG" width="30%">
+  <span><--- 초기화면</span>
+</div>
 </div>
