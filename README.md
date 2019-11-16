@@ -19,4 +19,53 @@ Auto Layout 사용. <br> <br>
 RxSwift 사용. <br>
 아키텍처 적용 (ex: MVVM, VIPER, Clean Architecture, etc.) <br>
 Unit Test 적용. <br>
-UITableView/UICollectionView prefetching 사용 <br>
+UITableView/UICollectionView prefetching 사용 <br> <br>
+- 스크린샷 <br>
+<table>
+  <tr>  
+      <td>
+        <img src="./ScreenShot/IMG_0124.PNG" width="100%">
+      </td>
+    <td>
+        <img src="./ScreenShot/IMG_0125.PNG" width="100%">
+      </td>
+    <td>
+        <img src="./ScreenShot/IMG_0126.PNG" width="100%">
+      </td>
+  </tr>
+  <tr>  
+      <td>
+        <span>초기화면</span>
+      </td>
+    <td>
+       <span>메인 검색 화면</span>
+      </td>
+    <td>
+        <span>검색 결과</span>
+      </td>
+  </tr>
+</table>
+<table>
+  <tr>  
+      <td>
+        <img src="./ScreenShot/IMG_0127.PNG" width="100%">
+      </td>
+    <td>
+        <img src="./ScreenShot/IMG_0128.PNG" width="100%">
+      </td>
+    <td>
+        <img src="./ScreenShot/IMG_0129.PNG" width="100%">
+      </td>
+  </tr>
+  <tr>  
+      <td>
+        <span>항목 클릭시 웹 페이지로 이동</span>
+      </td>
+    <td>
+       <span>항목에서 왼쪽 이미지 아이콘 클릭시 이미지 전체보기로 이동</span>
+      </td>
+    <td>
+        <span>항목 왼쪽 이미지 Kingfisher 라이브러리 사용 및 스크롤시 페이징 기능 적용 </span>
+      </td>
+  </tr>
+</table>
