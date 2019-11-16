@@ -29,10 +29,10 @@ UITableView/UICollectionView prefetching 사용 <br> <br>
         <img src="./ScreenShot/IMG_0124.PNG" width="100%">
       </td>
     <td>
-        <img src="./ScreenShot/IMG_0125.PNG" width="100%">
+        <img src="./ScreenShot/IMG_0131.PNG" width="100%">
       </td>
     <td>
-        <img src="./ScreenShot/IMG_0126.PNG" width="100%">
+        <img src="./ScreenShot/IMG_0132.PNG" width="100%">
       </td>
   </tr>
   <tr>  
@@ -40,10 +40,10 @@ UITableView/UICollectionView prefetching 사용 <br> <br>
         <span>초기화면</span>
       </td>
     <td>
-       <span>메인 검색 화면</span>
+       <span>리스트 화면 검색 결과</span>
       </td>
     <td>
-        <span>검색 결과</span>
+        <span>collection 화면 검색 결과</span>
       </td>
   </tr>
 </table>
