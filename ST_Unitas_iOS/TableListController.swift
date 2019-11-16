@@ -134,14 +134,16 @@ class TableListController : UIViewController ,UITableViewDelegate, UITableViewDa
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         
         NSLog(">>>>>>>>>>>>>>>>>>> %@", searchText)
+        NSLog(">>>>>>>>>>>>>>>>>>> %d", self.data.count)
+        
         self.page = 1
         
-        self.data.removeAllObjects()
-        
-        if searchText.isEmpty {
+        if self.data.count > 0 && searchText.isEmpty {
+            self.empty_bar.isHidden = false
+            self.tableView.isHidden = true
             self.data.removeAllObjects()
             self.tableView.reloadData()
-        }else{
+        } else if !searchText.isEmpty {
             
             let backgroundQueue = DispatchQueue(label: "TableListController", qos: .background)
             backgroundQueue.async {
