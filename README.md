@@ -20,6 +20,8 @@ RxSwift 사용. <br>
 아키텍처 적용 (ex: MVVM, VIPER, Clean Architecture, etc.) <br>
 Unit Test 적용. <br>
 UITableView/UICollectionView prefetching 사용 <br> <br>
+- 화면 레이아웃 <br>
+<img src="./ScreenShot/Storyboard.png" width="100%"><br>
 - 스크린샷 <br>
 <table>
   <tr>  
