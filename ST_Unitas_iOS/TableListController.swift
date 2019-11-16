@@ -139,11 +139,16 @@ class TableListController : UIViewController ,UITableViewDelegate, UITableViewDa
         self.page = 1
         
         if self.data.count > 0 && searchText.isEmpty {
+            
             self.empty_bar.isHidden = false
             self.tableView.isHidden = true
             self.data.removeAllObjects()
             self.tableView.reloadData()
+            
         } else if !searchText.isEmpty {
+            
+            self.data.removeAllObjects()
+            self.tableView.reloadData()
             
             let backgroundQueue = DispatchQueue(label: "TableListController", qos: .background)
             backgroundQueue.async {
