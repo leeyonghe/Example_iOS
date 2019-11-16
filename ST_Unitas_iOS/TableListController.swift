@@ -33,13 +33,15 @@ extension UISearchBar {
     }
 }
 
-class TableListController : UIViewController ,UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, IKakaoTableviewCell{
+class TableListController : UIViewController ,UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, UICollectionViewDelegate, UICollectionViewDataSource, IKakaoTableviewCell, IKakaoCollectionCell{
     
     
     @IBOutlet var tableView: UITableView!
     @IBOutlet var searchBar: UISearchBar!
     @IBOutlet var empty_bar: UILabel!
     @IBOutlet var loadingview: UIView!
+    @IBOutlet var collectionList: UICollectionView!
+    @IBOutlet var select_icon: UIImageView!
     
     var data : NSMutableArray!
     var page : Int!
@@ -53,15 +55,24 @@ class TableListController : UIViewController ,UITableViewDelegate, UITableViewDa
         self.searchBar.setCustomBackgroundColor(color: UIColor.white)
         self.tableView.backgroundColor = UIColor.white
         self.page = 1
+        
+        let layout = UICollectionViewFlowLayout()
+        let width = UIScreen.main.bounds.size.width
+        layout.estimatedItemSize = CGSize(width: width, height: 320)
+        self.collectionList?.collectionViewLayout = layout
+        if select_icon.isHighlighted {
+            NSLog("Highlighted")
+        }else{
+            NSLog("No Highlighted")
+        }
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let count = self.data.count
         if count > 0 {
-            self.tableView.isHidden = false
             self.empty_bar.isHidden = true
         }else{
-            self.tableView.isHidden = true
             self.empty_bar.isHidden = false
         }
         return self.data.count
@@ -131,6 +142,57 @@ class TableListController : UIViewController ,UITableViewDelegate, UITableViewDa
         UIApplication.shared.open(url)
     }
     
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        let count = self.data.count
+        if count > 0 {
+            self.collectionList.isHidden = false
+            self.empty_bar.isHidden = true
+        }else{
+            self.collectionList.isHidden = true
+            self.empty_bar.isHidden = false
+        }
+        return self.data.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cellIdentifier = "CCell"
+        
+        let cell = collectionList.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! KakaoCollectionCell
+        
+        let obj = self.data.object(at: indexPath.row) as! NSDictionary
+        
+        cell.collection.text = "구분 : \(obj.object(forKey: "collection") as? NSString ?? "")"
+        
+        cell.site_name.text = "사이트이름 : \(obj.object(forKey: "display_sitename") as? NSString ?? "")"
+        
+        cell.date.text = "생성일 : \(obj.object(forKey: "datetime") as? String ?? "")"
+        
+        let url = URL(string: obj.object(forKey: "thumbnail_url") as! String)
+        
+        let processor = RoundCornerImageProcessor(cornerRadius: 20)
+        
+        cell.thumbnail_url.kf.indicatorType = .activity
+        cell.thumbnail_url.kf.setImage(
+            with: url,
+            placeholder: UIImage(named: "placeholderImage"),
+            options: [
+                .processor(processor),
+                .scaleFactor(UIScreen.main.scale),
+                .transition(.fade(1)),
+                .cacheOriginalImage
+            ])
+            
+        cell.setDelegate(delegate: self)
+        
+        cell.tag = indexPath.row
+        
+        return cell
+        
+    }
+    
+    
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         
         NSLog(">>>>>>>>>>>>>>>>>>> %@", searchText)
@@ -141,14 +203,22 @@ class TableListController : UIViewController ,UITableViewDelegate, UITableViewDa
         if self.data.count > 0 && searchText.isEmpty {
             
             self.empty_bar.isHidden = false
+            
             self.tableView.isHidden = true
+            self.collectionList.isHidden = true
+            
             self.data.removeAllObjects()
-            self.tableView.reloadData()
             
         } else if !searchText.isEmpty {
             
             self.data.removeAllObjects()
-            self.tableView.reloadData()
+            
+            if self.select_icon.isHighlighted {
+                self.collectionList.reloadData()
+            }else{
+                self.tableView.reloadData()
+            }
+            
             
             let backgroundQueue = DispatchQueue(label: "TableListController", qos: .background)
             backgroundQueue.async {
@@ -161,25 +231,47 @@ class TableListController : UIViewController ,UITableViewDelegate, UITableViewDa
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         self.searchBar.endEditing(true)
-        let  height = self.tableView.frame.size.height
-        let contentYoffset = self.tableView.contentOffset.y
-        let distanceFromBottom = self.tableView.contentSize.height - contentYoffset
-        if distanceFromBottom < height {
-            if is_end == 0 {
-                self.page = self.page + 1
-//                SearchProcess(searchText: self.searchBar.text!)
-                let searchText = self.searchBar.text!
-                let backgroundQueue = DispatchQueue(label: "TableListController", qos: .background)
-                backgroundQueue.async {
-                    self.SearchProcess(searchText: searchText)
+        if self.select_icon.isHighlighted {
+            let  height = self.collectionList.frame.size.height
+            let contentYoffset = self.collectionList.contentOffset.y
+            let distanceFromBottom = self.collectionList.contentSize.height - contentYoffset
+            if distanceFromBottom < height {
+                if is_end == 0 {
+                    self.page = self.page + 1
+    //                SearchProcess(searchText: self.searchBar.text!)
+                    let searchText = self.searchBar.text!
+                    let backgroundQueue = DispatchQueue(label: "TableListController", qos: .background)
+                    backgroundQueue.async {
+                        self.SearchProcess(searchText: searchText)
+                    }
+                }
+            }
+        }else{
+            let  height = self.tableView.frame.size.height
+            let contentYoffset = self.tableView.contentOffset.y
+            let distanceFromBottom = self.tableView.contentSize.height - contentYoffset
+            if distanceFromBottom < height {
+                if is_end == 0 {
+                    self.page = self.page + 1
+    //                SearchProcess(searchText: self.searchBar.text!)
+                    let searchText = self.searchBar.text!
+                    let backgroundQueue = DispatchQueue(label: "TableListController", qos: .background)
+                    backgroundQueue.async {
+                        self.SearchProcess(searchText: searchText)
+                    }
                 }
             }
         }
-        
     }
     
     
     func IconClicked(index: Int) {
+        let obj = self.data.object(at: index) as! NSDictionary
+        self .performSegue(withIdentifier: "show_image", sender: obj.object(forKey: "image_url") as! String)
+    }
+    
+    
+    func IconClicked2(index: Int) {
         let obj = self.data.object(at: index) as! NSDictionary
         self .performSegue(withIdentifier: "show_image", sender: obj.object(forKey: "image_url") as! String)
     }
@@ -253,7 +345,17 @@ class TableListController : UIViewController ,UITableViewDelegate, UITableViewDa
             self.is_end = json["meta"]["is_end"].intValue
 
             DispatchQueue.main.async {
-                self.tableView.reloadData()
+                
+                if self.select_icon.isHighlighted {
+                    self.tableView.isHidden = true
+                    self.collectionList.isHidden = false
+                    self.collectionList.reloadData()
+                }else{
+                    self.tableView.isHidden = false
+                    self.collectionList.isHidden = true
+                    self.tableView.reloadData()
+                }
+                
                 self.loadingview.isHidden = true
             }
             
@@ -263,6 +365,20 @@ class TableListController : UIViewController ,UITableViewDelegate, UITableViewDa
         
         semaphore.wait()
         
+    }
+    
+    @IBAction func select_btn_clicked(_ sender: Any) {
+        self.page = 1
+        if self.select_icon.isHighlighted {
+            self.select_icon.isHighlighted = false
+        }else{
+            self.select_icon.isHighlighted = true
+        }
+        let searchText = self.searchBar.text!
+        let backgroundQueue = DispatchQueue(label: "TableListController", qos: .background)
+        backgroundQueue.async {
+            self.SearchProcess(searchText: searchText)
+        }
     }
     
 }

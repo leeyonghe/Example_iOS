@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B239B6C23804A3F00B24CA0 /* ST_Unitas_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B239B6B23804A3F00B24CA0 /* ST_Unitas_iOSTests.swift */; };
+		9B3112EC2380273E003026DA /* KakaoCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3112EB2380273E003026DA /* KakaoCollectionCell.swift */; };
+		9B3112F123802D91003026DA /* list_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B3112EF23802D91003026DA /* list_icon.png */; };
+		9B3112F223802D91003026DA /* collection_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B3112F023802D91003026DA /* collection_icon.png */; };
 		9B685F2F237E433E00FF6EA0 /* ShowImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B685F2E237E433E00FF6EA0 /* ShowImageController.swift */; };
 		9BBAD3D6237D86840087C0E7 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBAD3D5237D86840087C0E7 /* LoadingViewController.swift */; };
 		9BBAD3D8237D88000087C0E7 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BBAD3D7237D88000087C0E7 /* logo.png */; };
@@ -20,9 +24,25 @@
 		9BFCC488237EB02F00DEFEBA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFCC487237EB02F00DEFEBA /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9B239B6E23804A3F00B24CA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BCEB8A8237D73E8001B6CAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BCEB8AF237D73E8001B6CAB;
+			remoteInfo = ST_Unitas_iOS;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		27E95D4A8A5FC9D47CDBE0F1 /* Pods_ST_Unitas_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ST_Unitas_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34B369CD8B97AAF96C5D49D0 /* Pods-ST_Unitas_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ST_Unitas_iOS.release.xcconfig"; path = "Target Support Files/Pods-ST_Unitas_iOS/Pods-ST_Unitas_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		9B239B6923804A3F00B24CA0 /* ST_Unitas_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ST_Unitas_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B239B6B23804A3F00B24CA0 /* ST_Unitas_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ST_Unitas_iOSTests.swift; sourceTree = "<group>"; };
+		9B239B6D23804A3F00B24CA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B3112EB2380273E003026DA /* KakaoCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoCollectionCell.swift; sourceTree = "<group>"; };
+		9B3112EF23802D91003026DA /* list_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list_icon.png; sourceTree = "<group>"; };
+		9B3112F023802D91003026DA /* collection_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = collection_icon.png; sourceTree = "<group>"; };
 		9B685F2E237E433E00FF6EA0 /* ShowImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowImageController.swift; sourceTree = "<group>"; };
 		9BBAD3CA237D7A640087C0E7 /* KakaoCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoCommon.framework; sourceTree = "<group>"; };
 		9BBAD3CE237D7A780087C0E7 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
@@ -41,6 +61,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9B239B6623804A3F00B24CA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9BCEB8AD237D73E8001B6CAB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -61,10 +88,20 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		9B239B6A23804A3F00B24CA0 /* ST_Unitas_iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				9B239B6B23804A3F00B24CA0 /* ST_Unitas_iOSTests.swift */,
+				9B239B6D23804A3F00B24CA0 /* Info.plist */,
+			);
+			path = ST_Unitas_iOSTests;
+			sourceTree = "<group>";
+		};
 		9BCEB8A7237D73E8001B6CAB = {
 			isa = PBXGroup;
 			children = (
 				9BCEB8B2237D73E8001B6CAB /* ST_Unitas_iOS */,
+				9B239B6A23804A3F00B24CA0 /* ST_Unitas_iOSTests */,
 				9BCEB8B1237D73E8001B6CAB /* Products */,
 				9A61FF240FB7528E648A6333 /* Pods */,
 				FAD97DA0394DA18158D40114 /* Frameworks */,
@@ -75,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				9BCEB8B0237D73E8001B6CAB /* ST_Unitas_iOS.app */,
+				9B239B6923804A3F00B24CA0 /* ST_Unitas_iOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,13 +124,16 @@
 				9BCEB8B3237D73E8001B6CAB /* AppDelegate.swift */,
 				9BBAD3D5237D86840087C0E7 /* LoadingViewController.swift */,
 				9BBAD3D9237D8ACD0087C0E7 /* TableListController.swift */,
-				9BBAD3DD237D8C470087C0E7 /* KakaoTableviewCell.swift */,
 				9B685F2E237E433E00FF6EA0 /* ShowImageController.swift */,
+				9BBAD3DD237D8C470087C0E7 /* KakaoTableviewCell.swift */,
+				9B3112EB2380273E003026DA /* KakaoCollectionCell.swift */,
 				9BCEB8BC237D73EA001B6CAB /* Assets.xcassets */,
 				9BCEB8C1237D73EA001B6CAB /* Info.plist */,
 				9BCEB8B9237D73E8001B6CAB /* Main.storyboard */,
 				9BCEB8BE237D73EA001B6CAB /* LaunchScreen.storyboard */,
 				9BBAD3D7237D88000087C0E7 /* logo.png */,
+				9B3112EF23802D91003026DA /* list_icon.png */,
+				9B3112F023802D91003026DA /* collection_icon.png */,
 			);
 			path = ST_Unitas_iOS;
 			sourceTree = "<group>";
@@ -110,6 +151,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9B239B6823804A3F00B24CA0 /* ST_Unitas_iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B239B7223804A3F00B24CA0 /* Build configuration list for PBXNativeTarget "ST_Unitas_iOSTests" */;
+			buildPhases = (
+				9B239B6523804A3F00B24CA0 /* Sources */,
+				9B239B6623804A3F00B24CA0 /* Frameworks */,
+				9B239B6723804A3F00B24CA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B239B6F23804A3F00B24CA0 /* PBXTargetDependency */,
+			);
+			name = ST_Unitas_iOSTests;
+			productName = ST_Unitas_iOSTests;
+			productReference = 9B239B6923804A3F00B24CA0 /* ST_Unitas_iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		9BCEB8AF237D73E8001B6CAB /* ST_Unitas_iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9BCEB8C4237D73EA001B6CAB /* Build configuration list for PBXNativeTarget "ST_Unitas_iOS" */;
@@ -140,6 +199,10 @@
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = lee;
 				TargetAttributes = {
+					9B239B6823804A3F00B24CA0 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 9BCEB8AF237D73E8001B6CAB;
+					};
 					9BCEB8AF237D73E8001B6CAB = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
@@ -159,19 +222,29 @@
 			projectRoot = "";
 			targets = (
 				9BCEB8AF237D73E8001B6CAB /* ST_Unitas_iOS */,
+				9B239B6823804A3F00B24CA0 /* ST_Unitas_iOSTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9B239B6723804A3F00B24CA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9BCEB8AE237D73E8001B6CAB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B3112F123802D91003026DA /* list_icon.png in Resources */,
 				9BBAD3D8237D88000087C0E7 /* logo.png in Resources */,
 				9BCEB8C0237D73EA001B6CAB /* LaunchScreen.storyboard in Resources */,
 				9BCEB8BD237D73EA001B6CAB /* Assets.xcassets in Resources */,
 				9BCEB8BB237D73E8001B6CAB /* Main.storyboard in Resources */,
+				9B3112F223802D91003026DA /* collection_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,12 +293,21 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9B239B6523804A3F00B24CA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B239B6C23804A3F00B24CA0 /* ST_Unitas_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9BCEB8AC237D73E8001B6CAB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9BCEB8B4237D73E8001B6CAB /* AppDelegate.swift in Sources */,
 				9B685F2F237E433E00FF6EA0 /* ShowImageController.swift in Sources */,
+				9B3112EC2380273E003026DA /* KakaoCollectionCell.swift in Sources */,
 				9BBAD3DA237D8ACD0087C0E7 /* TableListController.swift in Sources */,
 				9BBAD3DE237D8C470087C0E7 /* KakaoTableviewCell.swift in Sources */,
 				9BBAD3D6237D86840087C0E7 /* LoadingViewController.swift in Sources */,
@@ -234,6 +316,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9B239B6F23804A3F00B24CA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9BCEB8AF237D73E8001B6CAB /* ST_Unitas_iOS */;
+			targetProxy = 9B239B6E23804A3F00B24CA0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9BCEB8B9237D73E8001B6CAB /* Main.storyboard */ = {
@@ -255,6 +345,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9B239B7023804A3F00B24CA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X6XSS6YDP5;
+				INFOPLIST_FILE = ST_Unitas_iOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lee.kr.ST-Unitas-iOS.ST-Unitas-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ST_Unitas_iOS.app/ST_Unitas_iOS";
+			};
+			name = Debug;
+		};
+		9B239B7123804A3F00B24CA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X6XSS6YDP5;
+				INFOPLIST_FILE = ST_Unitas_iOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lee.kr.ST-Unitas-iOS.ST-Unitas-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ST_Unitas_iOS.app/ST_Unitas_iOS";
+			};
+			name = Release;
+		};
 		9BCEB8C2237D73EA001B6CAB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -424,6 +554,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9B239B7223804A3F00B24CA0 /* Build configuration list for PBXNativeTarget "ST_Unitas_iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B239B7023804A3F00B24CA0 /* Debug */,
+				9B239B7123804A3F00B24CA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9BCEB8AB237D73E8001B6CAB /* Build configuration list for PBXProject "ST_Unitas_iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
