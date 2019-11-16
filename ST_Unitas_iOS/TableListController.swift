@@ -8,7 +8,6 @@
 
 import UIKit
 import Alamofire
-import KakaoOpenSDK
 import Kingfisher
 import SwiftyJSON
 
@@ -136,6 +135,7 @@ class TableListController : UIViewController ,UITableViewDelegate, UITableViewDa
         
         NSLog(">>>>>>>>>>>>>>>>>>> %@", searchText)
         self.page = 1
+        self.data.removeAllObjects()
         SearchProcess(searchText: searchText)
         
     }
@@ -169,6 +169,8 @@ class TableListController : UIViewController ,UITableViewDelegate, UITableViewDa
     
     func SearchProcess(searchText : String){
         
+        objc_sync_enter(searchText)
+        
         self.loadingview.isHidden = false
         
         //        HTTP/1.1 200 OK
@@ -198,9 +200,11 @@ class TableListController : UIViewController ,UITableViewDelegate, UITableViewDa
         
         let headers = ["Authorization": "KakaoAK 77a9306101b5e16ed249a11a6d2a2b39"]
         
+        NSLog(">>>>>>>>>>>>>>>> searchText \(searchText) ")
+        
         Alamofire.request(url,
                           method: .get,
-                          parameters: ["query": searchText, "sort": "recency", "page" : self.page as Int, "size" : 30],
+                          parameters: ["query": "\(searchText)", "sort": "recency", "page" : self.page as Int, "size" : 30],
                           headers: headers)
         .validate()
         .responseJSON { response in
@@ -227,6 +231,8 @@ class TableListController : UIViewController ,UITableViewDelegate, UITableViewDa
             self.loadingview.isHidden = true
             
         }
+        
+        objc_sync_exit(searchText)
         
     }
     

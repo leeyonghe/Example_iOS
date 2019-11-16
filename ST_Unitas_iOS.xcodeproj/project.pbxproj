@@ -8,10 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9B685F2F237E433E00FF6EA0 /* ShowImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B685F2E237E433E00FF6EA0 /* ShowImageController.swift */; };
-		9BBAD3CB237D7A640087C0E7 /* KakaoCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BBAD3CA237D7A640087C0E7 /* KakaoCommon.framework */; };
-		9BBAD3CC237D7A640087C0E7 /* KakaoCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9BBAD3CA237D7A640087C0E7 /* KakaoCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9BBAD3CF237D7A780087C0E7 /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BBAD3CE237D7A780087C0E7 /* KakaoOpenSDK.framework */; };
-		9BBAD3D0237D7A780087C0E7 /* KakaoOpenSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9BBAD3CE237D7A780087C0E7 /* KakaoOpenSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9BBAD3D6237D86840087C0E7 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBAD3D5237D86840087C0E7 /* LoadingViewController.swift */; };
 		9BBAD3D8237D88000087C0E7 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BBAD3D7237D88000087C0E7 /* logo.png */; };
 		9BBAD3DA237D8ACD0087C0E7 /* TableListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBAD3D9237D8ACD0087C0E7 /* TableListController.swift */; };
@@ -23,21 +19,6 @@
 		9BCEB8C0237D73EA001B6CAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BCEB8BE237D73EA001B6CAB /* LaunchScreen.storyboard */; };
 		9BFCC488237EB02F00DEFEBA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFCC487237EB02F00DEFEBA /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		9BBAD3CD237D7A640087C0E7 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				9BBAD3CC237D7A640087C0E7 /* KakaoCommon.framework in Embed Frameworks */,
-				9BBAD3D0237D7A780087C0E7 /* KakaoOpenSDK.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		27E95D4A8A5FC9D47CDBE0F1 /* Pods_ST_Unitas_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ST_Unitas_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,8 +46,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BC3B8D2237D9DFE00F8A1D1 /* Pods_ST_Unitas_iOS.framework in Frameworks */,
-				9BBAD3CB237D7A640087C0E7 /* KakaoCommon.framework in Frameworks */,
-				9BBAD3CF237D7A780087C0E7 /* KakaoOpenSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +118,6 @@
 				9BCEB8AC237D73E8001B6CAB /* Sources */,
 				9BCEB8AD237D73E8001B6CAB /* Frameworks */,
 				9BCEB8AE237D73E8001B6CAB /* Resources */,
-				9BBAD3CD237D7A640087C0E7 /* Embed Frameworks */,
 				DBEF042E0AB399E2C16D4988 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
