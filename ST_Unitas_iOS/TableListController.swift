@@ -143,7 +143,7 @@ class TableListController : UIViewController ,UITableViewDelegate, UITableViewDa
             self.tableView.reloadData()
         }else{
             
-            let backgroundQueue = DispatchQueue(label: "com.app.queue", qos: .background)
+            let backgroundQueue = DispatchQueue(label: "TableListController", qos: .background)
             backgroundQueue.async {
                 self.SearchProcess(searchText: searchText)
             }
@@ -160,7 +160,12 @@ class TableListController : UIViewController ,UITableViewDelegate, UITableViewDa
         if distanceFromBottom < height {
             if is_end == 0 {
                 self.page = self.page + 1
-                SearchProcess(searchText: self.searchBar.text!)
+//                SearchProcess(searchText: self.searchBar.text!)
+                let searchText = self.searchBar.text!
+                let backgroundQueue = DispatchQueue(label: "TableListController", qos: .background)
+                backgroundQueue.async {
+                    self.SearchProcess(searchText: searchText)
+                }
             }
         }
         
