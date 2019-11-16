@@ -135,8 +135,20 @@ class TableListController : UIViewController ,UITableViewDelegate, UITableViewDa
         
         NSLog(">>>>>>>>>>>>>>>>>>> %@", searchText)
         self.page = 1
+        
         self.data.removeAllObjects()
-        SearchProcess(searchText: searchText)
+        
+        if searchText.isEmpty {
+            self.data.removeAllObjects()
+            self.tableView.reloadData()
+        }else{
+            
+            let backgroundQueue = DispatchQueue(label: "com.app.queue", qos: .background)
+            backgroundQueue.async {
+                self.SearchProcess(searchText: searchText)
+            }
+            
+        }
         
     }
     
@@ -169,9 +181,11 @@ class TableListController : UIViewController ,UITableViewDelegate, UITableViewDa
     
     func SearchProcess(searchText : String){
         
-        objc_sync_enter(searchText)
+        let semaphore = DispatchSemaphore(value: 0)
         
-        self.loadingview.isHidden = false
+        DispatchQueue.main.async {
+            self.loadingview.isHidden = false
+        }
         
         //        HTTP/1.1 200 OK
         //        Content-Type: application/json;charset=UTF-8
@@ -226,13 +240,16 @@ class TableListController : UIViewController ,UITableViewDelegate, UITableViewDa
 
             self.is_end = json["meta"]["is_end"].intValue
 
-            self.tableView.reloadData()
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+                self.loadingview.isHidden = true
+            }
             
-            self.loadingview.isHidden = true
+            semaphore.signal()
             
         }
         
-        objc_sync_exit(searchText)
+        semaphore.wait()
         
     }
     
