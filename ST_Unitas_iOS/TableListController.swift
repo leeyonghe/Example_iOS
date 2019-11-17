@@ -10,6 +10,8 @@ import UIKit
 import Alamofire
 import Kingfisher
 import SwiftyJSON
+import RxCocoa
+import RxSwift
 
 extension UIImage {
     static func imageFromLayer (layer: CALayer) -> UIImage? {
@@ -45,10 +47,10 @@ class TableListController : UIViewController ,UITableViewDelegate, UITableViewDa
     
     var data : NSMutableArray!
     var page : Int!
-    
     let threshold = 100.0
     var isLoadingMore : Bool = false
     var is_end : Int = 0
+    
     
     override func viewDidLoad() {
         self.data = NSMutableArray.init()
@@ -142,6 +144,11 @@ class TableListController : UIViewController ,UITableViewDelegate, UITableViewDa
         UIApplication.shared.open(url)
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let obj = self.data.object(at: indexPath.row) as! NSDictionary
+        guard let url = URL(string: obj.object(forKey: "doc_url") as! String) else { return }
+        UIApplication.shared.open(url)
+    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         let count = self.data.count
@@ -259,6 +266,9 @@ class TableListController : UIViewController ,UITableViewDelegate, UITableViewDa
                     backgroundQueue.async {
                         self.SearchProcess(searchText: searchText)
                     }
+                    
+                    
+                    
                 }
             }
         }
